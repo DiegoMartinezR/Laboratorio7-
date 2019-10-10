@@ -1,0 +1,21 @@
+<div class="container px-5">
+    <div class="card text-center card-info mx-5">
+        <card class="card-header bg-secondary">
+            <h4 class="text-white text-uppercase">
+                <%= titulo %>
+            </h4>
+        </card>
+        <form action="/dash/nivel" method="post">
+            <div class="card-body my-5">
+                <select name="curso" required class="form-control">
+                    <option value="0">JAVA</option>
+                    <option value="1">PHP</option>
+                    <option value="2">.NET</option>
+                </select>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-info" class="btn">Siguiente</button>
+            </div>
+        </form>
+    </div>
+</div>

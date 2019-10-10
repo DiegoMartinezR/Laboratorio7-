@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/stylesheets/pagos.css">
+<div class="container px-5">
+    <div class="card text-center card-info mx-5">
+        <card class="card-header bg-secondary">
+            <h4 class="text-white text-uppercase">
+                <%= titulo %>
+            </h4>
+        </card>
+        <form action="/dash/resultado" method="post">
+            <div class="card-body my-5">
+                <div>
+                    <div class="chiller_cb">
+                       <input type="radio" name="tipoPago" value="efectivo" id="myCheckbox"> <br>
+                        <label for="myCheckbox">Efectivo</label>
+                        <span></span>
+                    </div>
+                    <div class="chiller_cb">
+                       <input type="radio" name="tipoPago" value="Tarjeta de Credito"  id="myCheckbox2"> <br>
+                        <label for="myCheckbox2">Tarjeta de Credito</label>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-outline-success">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>

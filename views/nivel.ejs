@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/stylesheets/nivel.css">
+<div class="container px-5">
+    <div class="card text-center card-info mx-5">
+        <card class="card-header bg-secondary">
+            <h4 class="text-white text-uppercase">
+                <%= titulo %>
+            </h4>
+        </card>
+     <form action="/dash/pago" method="post">
+        <div class="card-body my-5">
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <span>Básico</span>
+                    <input type="checkbox" name="nivel1"  value="1" class="form-control bg-info">
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <span>Intermedio</span>
+                    <input type="checkbox" name="nivel2"   value="2" class="form-control bg-info">
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <span class="m-0">Avanzado</span>
+                    <input type="checkbox" name="nivel3"  value="3" class="form-control bg-info">
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Siguiente</button>
+        </div>
+    </form>
+    </div>
+</div>
